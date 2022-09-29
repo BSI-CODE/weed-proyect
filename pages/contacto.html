@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav_list">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./cultivo.html">CULTIVO</a></li>
+                <li><a href="./medicinal.html">MEDICINAL</a></li>
+                <li><a href="./cocina.html">RECETAS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <form action="" class="solicitud_contacto">
+            <fieldset>
+              <legend class="titleSolicitud">Solicitud</legend>
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Escriba su Nombre"
+                id="nombre"
+                required
+              />
+              <br />
+              <label for="apellido">Apellido:</label>
+              <input
+                type="text"
+                name="apellido"
+                placeholder="Escriba su Apellido"
+                id="apellido"
+                required
+              />
+              <div>Hombre</div>
+              <input type="radio" name="sexo" value="hombre" />
+              <div>Mujer</div>
+              <input type="radio" name="sexo" value="mujer" />
+              <div>Acepta los terminos y condiciones</div>
+              <input type="checkbox" name="acepta" value="1" />
+              <br />
+              
+              <label for="mensaje">Mensaje:</label>
+              <br />
+              <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba aqui su consulta..."></textarea>
+              <br />
+              <input type="submit" value="Enviar formulario" class="botonEnviar" />
+              <input type="reset" value="Borrar formulario" class="botonBorrar" />
+            </fieldset>
+          </form>
+    </section>
+    <footer>
+        <div class="container_footer">
+           <p class="text_footer">Seguinos en nuestras redes</p>
+           <div class="container_footer-icons">
+               <img src="../imgs/facebook.png" alt="icon_facebook" class="icon_footer">
+               <img src="../imgs/instagram.png" alt="icon_instagram" class="icon_footer">
+               <img src="../imgs/whatsapp.png" alt="icon_whatsapp" class="icon_footer">
+           </div>
+        </div>
+   </footer>
+</body>
+</html>
