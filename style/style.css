@@ -19,23 +19,35 @@ body {
    
 }
 nav {  
+    
     font-family: 'Raleway', sans-serif;
     color: antiquewhite;
     font-size: 1.5rem;
-    
 }
-
 
 
 ul li a{
     color: antiquewhite;
     text-decoration: none;
     list-style: none;
+    
 }
+
 .nav_list {
     text-align: center;
     line-height: 50px;
 }
+.nav_list ul li a::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: rgb(155, 141, 14);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
 .text_main {
     margin-top: 50px;
     margin-left: 30px;
@@ -128,6 +140,8 @@ ul li a{
     display: flex;
 }
 .medicinalinfo_parrafo{
+  
+    
     margin-top: 20px;
     margin-right: 30px;
     padding-left: 20px;
@@ -137,7 +151,9 @@ ul li a{
 .medicinalinfo_title{
     font-size: 40px;
 }
-    
+.medicinalinfo {
+    box-shadow: 1em 2em 1em 1em 1em brown;
+} 
 @media (min-width: 768px) {
   
     .nav_list {
